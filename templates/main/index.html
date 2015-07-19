@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Msite Django Application</title>
+  </head>
+  <body>
+    <h2>User List;</h2>
+    <table>
+      <th>
+        Name
+      </th>
+      <th>
+        Surname
+      </th>
+      <th>
+        Email
+      </th>
+      {% for user in user_list %}
+        <tr>
+          <td>
+            {{ user.name }}
+          </td>
+          <td>
+            {{ user.surname }}
+          </td>
+          <td>
+            {{ user.email }}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  </body>
+</html>
